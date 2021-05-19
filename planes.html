@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Menú-->
+    <header class="border-b-2 border-gray-50">
+        <div class="container mx-auto">
+            <nav class="flex justify-between flex-wrap bg-white-100 p-3">
+                <div class="flex items-center flex-shrink-0 text-back mr-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-1 text-indigo-600" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <a href="index.html" class="font-semibold text-xl tracking-tight">Intralink</a>
+                </div>
+                <div class="block lg:hidden">
+                    <button id='boton'
+                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <div id='menu' class="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                    <div class="text-sm font-medium	 lg:flex-grow">
+                        <a href="index.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                            Inicio
+                        </a>
+                        <a href="planes.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                            Planes
+                        </a>
+
+                        <a href="productos.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                            Productos
+                        </a>
+                        <a href="contacto.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                            Contacto
+                        </a>
+                    </div>
+                    <div class="text-sm">
+                        <button onclick="document.getElementById('myModal').showModal()" id="btn"
+                            class="py-3 px-4 bg-none text-indigo-700 rounded-lg text mr-3 font-medium bg-indigo-50 hover:bg-indigo-100 focus:outline-none">Iniciar
+                            sesión</button>
+                        <button onclick="document.getElementById('myModal1').showModal();" id="btn1"
+                            class="py-3 px-4 bg-indigo-600 hover:bg-indigo-700  text-white rounded-lg text  font-medium focus:outline-none"
+                            data-dismiss="modal">Registrarse</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="flex justify-center items-center pt-10 pb-8 lg:pb-10 md:pt-20 md:pb-20 px-4">
+        <div class="items-center justify-center">
+            <div class="text-center font-semibold">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl  font-extrabold">Precios simple, <span
+                        class="text-indigo-600">valor inmejorable</span>
+                </h2>
+                <p class="pt-6 text-base lg:text-xl text-gray-500 font-normal w-full px-8 md:w-full">
+                    Elija un plan que funcione mejor para usted y tu equipo.
+                </p>
+            </div>
+            <div class="pt-10 lg:pt-24 flex flex-row flex-wrap">
+                <div class="w-full lg:w-1/3 xl:w-96 p-8 xl:pr-16 shadow-xl rounded-3xl mb-5 bg-white">
+                    <h1 class="text-black font-semibold text-2xl">Básico</h1>
+                    <p class="pt-2 tracking-wide items-center">
+                        <span class="text-gray-400 align-top">S/ </span>
+                        <span class="text-3xl font-semibold">36</span>
+                        <span class="text-gray-400 font-medium">/ mes</span>
+                    </p>
+                    <hr class="mt-4 border-1">
+                    <div class="pt-8">
+                        <p class="font-semibold text-gray-400 text-left">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                Get started with <span class="text-black">messaging</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                Flexible <span class="text-black">team meetings</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                <span class="text-black">5 TB</span> cloud storage
+                            </span>
+                        </p>
+                        <button
+                            class="py-4 lg:px-10 mt-8 font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text shadow-xl w-full focus:outline-none">Seleccionar
+                            plan<span class="pl-2 material-icons align-middle text-sm">
+                                east
+                            </span></button>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-1/3 xl:w-80  p-8 bg-gray-900 text-white shadow-xl rounded-3xl border-4 border-white transform lg:scale-110 xl:scale-125 mb-5">
+                    <h1 class="text-white font-semibold text-2xl">Premium</h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">S/ </span>
+                        <span class="text-3xl font-semibold">56</span>
+                        <span class="text-gray-400 font-medium">/ mes</span>
+                    </p>
+                    <hr class="mt-4 border-1 border-gray-600">
+                    <div class="pt-8">
+                        <p class="font-semibold text-gray-400 text-left">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                All features in <span class="text-white">Basic</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                Flexible <span class="text-white">call scheduling</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                <span class="text-white">15 TB</span> cloud storage
+                            </span>
+                        </p>
+                        <button
+                            class="py-4 lg:px-10 mt-8 font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text shadow-xl w-full focus:outline-none">Seleccionar
+                            plan<span class="pl-2 material-icons align-middle text-sm">
+                                east
+                            </span></button>
+                    </div>
+                    <div class="absolute top-4 right-4">
+                        <p class="bg-yellow-400 text-gray-900 font-semibold px-3 py-1 rounded-full text-xs">Popular</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 xl:w-96 p-8 xl:pl-16 shadow-xl rounded-3xl mb-5 bg-white">
+                    <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
+                    <p class="pt-2 tracking-wide">
+                        <span class="text-gray-400 align-top">S/ </span>
+                        <span class="text-3xl font-semibold">86</span>
+                        <span class="text-gray-400 font-medium">/ mes</span>
+                    </p>
+                    <hr class="mt-4 border-1">
+                    <div class="pt-8">
+                        <p class="font-semibold text-gray-400 text-left">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                All features in <span class="text-black">Startup</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                Growth <span class="text-black">oriented</span>
+                            </span>
+                        </p>
+                        <p class="font-semibold text-gray-400 text-left pt-5">
+                            <span class="material-icons align-middle">
+                                done
+                            </span>
+                            <span class="pl-2">
+                                <span class="text-black">Unlimited</span> cloud storage
+                            </span>
+                        </p>
+                        <button
+                            class="py-4 lg:px-10 mt-8 font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text shadow-xl w-full focus:outline-none">Seleccionar
+                            plan<span class="pl-2 material-icons align-middle text-sm">
+                                east
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--FAQS-->
+
+    <section class="text-gray-700 bg-gray-50 pt-10 pb-10 md:pt-20 md:pb-20">
+        <div class="container px-4 mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-4xl text-center font-semibold">
+                    Preguntas frecuentes
+                </h2>
+            </div>
+            <div class="flex flex-wrap lg:w-2/3 sm:mx-auto sm:mb-2">
+                <div class="w-full">
+                    <details class="mb-4 cursor-pointer">
+                        <summary
+                            class="font-semibold bg-white shadow-sm hover:bg-white hover:text-indigo-600 focus:bg-white focus:text-indigo-600 rounded-xl py-6 px-4">
+                            Pregunta y respuesta de item 1
+                        </summary>
+                        <div class="p-4">
+                            <p class="text-base lg:text-lg text-gray-500"> Laboris qui labore cillum culpa in sunt
+                                quis sint
+                                veniam.
+                                Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                                minim velit nostrud pariatur culpa magna in aute.</p>
+                        </div>
+                    </details>
+                    <details class="mb-4 cursor-pointer">
+                        <summary
+                            class="font-semibold bg-white shadow-sm hover:bg-white hover:text-indigo-600 focus:bg-white focus:text-indigo-600 rounded-xl py-6 px-4">
+                            Pregunta y respuesta de item 2
+                        </summary>
+                        <div class="p-4">
+                            <p class="text-base lg:text-lg text-gray-500"> Laboris qui labore cillum culpa in sunt
+                                quis sint
+                                veniam.
+                                Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                                minim velit nostrud pariatur culpa magna in aute.</p>
+                        </div>
+                    </details>
+                    <details class="mb-4 cursor-pointer">
+                        <summary
+                            class="font-semibold bg-white shadow-sm hover:bg-white hover:text-indigo-600 focus:bg-white focus:text-indigo-600 rounded-xl py-6 px-4">
+                            Pregunta y respuesta de item 3
+                        </summary>
+                        <div class="p-4">
+                            <p class="text-base lg:text-lg text-gray-500"> Laboris qui labore cillum culpa in sunt
+                                quis sint
+                                veniam.
+                                Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                                minim velit nostrud pariatur culpa magna in aute.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--Footer-->
+
+    <div class="p-4 bg-gray-900">
+        <div class="container text-center text-white">
+            <p class="text-sm lg:text-base"> &#169 Intralink 2021 | Todos los derechos servervados</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

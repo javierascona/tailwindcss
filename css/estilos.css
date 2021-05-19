@@ -1,0 +1,27 @@
+dialog{
+    max-width: calc((100% - 6px) - 1em);
+    z-index: 50px !important;
+
+}
+htmul{
+    overflow: hidden !important;
+    display: block !important;
+}
+.custom-shape-divider-bottom-1621110634 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) !important;
+}
+
+.custom-shape-divider-bottom-1621110634 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 230px;
+    transform: rotateY(180deg) !important;
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login back</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+     <!--Menú-->
+  <header class="border-b-2 border-gray-50">
+    <div class="container mx-auto">
+        <nav class="flex justify-between flex-wrap bg-white-100 p-3">
+            <div class="flex items-center flex-shrink-0 text-back mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-1 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                  </svg>
+                <a href="index.html" class="font-semibold text-xl tracking-tight">Intralink</a>
+            </div>
+            <div class="block lg:hidden">
+                <button id='boton'
+                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id='menu' class="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                <div class="text-sm font-medium	 lg:flex-grow">
+                    <a href="index.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                        Inicio
+                    </a>
+                    <a href="planes.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                        Planes
+                    </a>
+                    
+                    <a href="productos.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                        Productos
+                    </a>
+                    <a href="contacto.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
+                        Contacto
+                    </a>
+                </div>
+                <div class="text-sm">
+                    <button onclick="document.getElementById('myModal').showModal()" id="btn"
+                        class="py-3 px-4 bg-none text-indigo-700 rounded-lg text mr-3 font-medium bg-indigo-50 hover:bg-indigo-100 focus:outline-none">Iniciar
+                        sesión</button>
+                    <button onclick="document.getElementById('myModal1').showModal();" id="btn1"
+                        class="py-3 px-4 bg-indigo-600 hover:bg-indigo-700  text-white rounded-lg text  font-medium focus:outline-none"
+                        data-dismiss="modal">Registrarse</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+   <div class="container mx-auto">
+       <div class="h-screen bg-white flex flex-col space-y-10 justify-center items-center">
+
+        <div id="loginback" class="w-screen  overflow-hidden md:w-3/5 lg:w-2/4 xl:w-2/6 p-6 rounded-2xl text-center shadow-lg">
+            <div class="">
+                <h2 class=" text-3xl	 font-bold mb-1">Iniciar sesión</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="mt-6">
+                <form action="#" class="" method="POST">
+                    <div class="relative mb-6">
+                        <div
+                            class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                        </div>
+    
+                        <input id="email" type="email" name="email"
+                            class="text-sm sm:text-base placeholder-gray-400 pl-10 pr-4 rounded-lg border border-gray-300 w-full py-2.5 focus:outline-none focus:border-blue-400"
+                            placeholder="Correo electrónico" />
+                    </div>
+                    <div class="relative mb-6">
+                        <div
+                            class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                            <span>
+                                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
+                            </span>
+                        </div>
+    
+                        <input id="password" type="password" name="password"
+                            class="text-sm sm:text-base placeholder-gray-400 pl-10 pr-4 rounded-lg border border-gray-300 w-full py-2.5 focus:outline-none focus:border-blue-400"
+                            placeholder="Contraseña" />
+                    </div>
+                    <div class="mb-6">
+                        <button class="py-2.5 px-10 bg-blue-600 text-white rounded-lg text shadow-xl w-full">Iniciar
+                            sesión</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+       </div>
+   </div>
+</body>
+
+</html>
